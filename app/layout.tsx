@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfitSans.variable} antialiased`}>{children}</body>
+      <body className={`${outfitSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
