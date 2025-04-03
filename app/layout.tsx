@@ -3,14 +3,9 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 
 const outfitSans = Outfit({
-  variable: "--font-geist-sans",
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
