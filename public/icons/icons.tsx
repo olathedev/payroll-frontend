@@ -1,4 +1,4 @@
-export const Chart = () => {
+export const Chart = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -10,23 +10,23 @@ export const Chart = () => {
       >
         <path
           d="M15.5 15.5H6.33333C3.58347 15.5 2.20854 15.5 1.35427 14.6457C0.5 13.7915 0.5 12.4165 0.5 9.66667V0.5"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M12.754 5.77776L10.3592 9.65376C10.0103 10.2185 9.61405 11.0717 8.89574 10.9453C8.05093 10.7967 7.64518 9.53739 6.91885 9.12044C6.32737 8.78089 5.89976 9.19008 5.55396 9.66665M15.5 1.33331L13.9554 3.83331M2.16666 14.6666L4.27193 11.5555"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
 
-export const Dashboard = () => {
+export const Dashboard = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -38,30 +38,29 @@ export const Dashboard = () => {
       >
         <path
           d="M1.66666 15C1.66666 13.7163 1.66666 13.0744 1.95561 12.6029C2.11728 12.3391 2.33911 12.1173 2.60294 11.9556C3.07445 11.6667 3.7163 11.6667 5 11.6667C6.2837 11.6667 6.92554 11.6667 7.39705 11.9556C7.66089 12.1173 7.88271 12.3391 8.04439 12.6029C8.33333 13.0744 8.33333 13.7163 8.33333 15C8.33333 16.2837 8.33333 16.9255 8.04439 17.397C7.88271 17.6609 7.66089 17.8827 7.39705 18.0444C6.92554 18.3333 6.2837 18.3333 5 18.3333C3.7163 18.3333 3.07445 18.3333 2.60294 18.0444C2.33911 17.8827 2.11728 17.6609 1.95561 17.397C1.66666 16.9255 1.66666 16.2837 1.66666 15Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
         <path
           d="M11.6667 15C11.6667 13.7163 11.6667 13.0744 11.9556 12.6029C12.1173 12.3391 12.3391 12.1173 12.6029 11.9556C13.0745 11.6667 13.7163 11.6667 15 11.6667C16.2837 11.6667 16.9255 11.6667 17.3971 11.9556C17.6609 12.1173 17.8827 12.3391 18.0444 12.6029C18.3333 13.0744 18.3333 13.7163 18.3333 15C18.3333 16.2837 18.3333 16.9255 18.0444 17.397C17.8827 17.6609 17.6609 17.8827 17.3971 18.0444C16.9255 18.3333 16.2837 18.3333 15 18.3333C13.7163 18.3333 13.0745 18.3333 12.6029 18.0444C12.3391 17.8827 12.1173 17.6609 11.9556 17.397C11.6667 16.9255 11.6667 16.2837 11.6667 15Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
         <path
           d="M1.66666 4.99999C1.66666 3.71629 1.66666 3.07444 1.95561 2.60293C2.11728 2.3391 2.33911 2.11728 2.60294 1.9556C3.07445 1.66666 3.7163 1.66666 5 1.66666C6.2837 1.66666 6.92554 1.66666 7.39705 1.9556C7.66089 2.11728 7.88271 2.3391 8.04439 2.60293C8.33333 3.07444 8.33333 3.71629 8.33333 4.99999C8.33333 6.28369 8.33333 6.92554 8.04439 7.39705C7.88271 7.66088 7.66089 7.8827 7.39705 8.04438C6.92554 8.33332 6.2837 8.33332 5 8.33332C3.7163 8.33332 3.07445 8.33332 2.60294 8.04438C2.33911 7.8827 2.11728 7.66088 1.95561 7.39705C1.66666 6.92554 1.66666 6.28369 1.66666 4.99999Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
         <path
           d="M11.6667 4.99999C11.6667 3.71629 11.6667 3.07444 11.9556 2.60293C12.1173 2.3391 12.3391 2.11728 12.6029 1.9556C13.0745 1.66666 13.7163 1.66666 15 1.66666C16.2837 1.66666 16.9255 1.66666 17.3971 1.9556C17.6609 2.11728 17.8827 2.3391 18.0444 2.60293C18.3333 3.07444 18.3333 3.71629 18.3333 4.99999C18.3333 6.28369 18.3333 6.92554 18.0444 7.39705C17.8827 7.66088 17.6609 7.8827 17.3971 8.04438C16.9255 8.33332 16.2837 8.33332 15 8.33332C13.7163 8.33332 13.0745 8.33332 12.6029 8.04438C12.3391 7.8827 12.1173 7.66088 11.9556 7.39705C11.6667 6.92554 11.6667 6.28369 11.6667 4.99999Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
       </svg>
     </div>
   );
 };
-
-export const Help = () => {
+export const Help = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -73,29 +72,29 @@ export const Help = () => {
       >
         <path
           d="M17.3333 8.99992C17.3333 4.39755 13.6024 0.666586 9 0.666586C4.39762 0.666586 0.666664 4.39755 0.666664 8.99992C0.666664 13.6023 4.39762 17.3333 9 17.3333C13.6024 17.3333 17.3333 13.6023 17.3333 8.99992Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
         <path
           d="M9.20182 13.1666V8.99996C9.20182 8.60712 9.20182 8.4107 9.07978 8.28866C8.95774 8.16663 8.76132 8.16663 8.36848 8.16663"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M8.99332 5.66663H9.00081"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
 
-export const Logout = () => {
+export const Logout = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -107,23 +106,23 @@ export const Logout = () => {
       >
         <path
           d="M10.5 12.6875C10.4387 14.2308 9.15258 15.5412 7.4297 15.499C7.02887 15.4892 6.53344 15.3495 5.5426 15.07C3.15801 14.3974 1.08796 13.267 0.591296 10.7346C0.5 10.2691 0.5 9.74532 0.5 8.69771L0.5 7.30229C0.5 6.25468 0.5 5.73087 0.591296 5.26538C1.08796 2.73304 3.15801 1.60263 5.5426 0.930022C6.53345 0.650537 7.02887 0.510795 7.4297 0.500989C9.15257 0.458841 10.4387 1.76923 10.5 3.31251"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M15.5 7.99996H6.33334M15.5 7.99996C15.5 7.41644 13.8381 6.32623 13.4167 5.91663M15.5 7.99996C15.5 8.58348 13.8381 9.67368 13.4167 10.0833"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
 
-export const Payroll = () => {
+export const Payroll = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -135,42 +134,42 @@ export const Payroll = () => {
       >
         <path
           d="M16.5 16.5C16.2737 16.6696 16.024 16.8173 15.7551 16.9394C14.8882 17.3333 13.743 17.3333 11.4526 17.3333H6.54736C4.25695 17.3333 3.11175 17.3333 2.24485 16.9394C1.97603 16.8173 1.72632 16.6696 1.5 16.5"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M0.666664 7.33335C0.666664 4.38545 0.666664 2.9115 1.544 1.92744C1.68432 1.77004 1.83898 1.62448 2.00621 1.49241C3.05178 0.666687 4.61785 0.666687 7.75 0.666687H10.25C13.3821 0.666687 14.9482 0.666687 15.9938 1.49241C16.161 1.62448 16.3157 1.77004 16.456 1.92744C17.3333 2.9115 17.3333 4.38545 17.3333 7.33335C17.3333 10.2813 17.3333 11.7552 16.456 12.7393C16.3157 12.8967 16.161 13.0422 15.9938 13.1743C14.9482 14 13.3821 14 10.25 14H7.75C4.61785 14 3.05178 14 2.00621 13.1743C1.83898 13.0422 1.68432 12.8967 1.544 12.7393C0.666664 11.7552 0.666664 10.2813 0.666664 7.33335Z"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M14.4167 7.33337H14.4092"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M3.58333 7.33337H3.57584"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M11.1258 7.33333C11.1258 8.48393 10.1931 9.41667 9.04249 9.41667C7.89189 9.41667 6.95915 8.48393 6.95915 7.33333C6.95915 6.18274 7.89189 5.25 9.04249 5.25C10.1931 5.25 11.1258 6.18274 11.1258 7.33333Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
       </svg>
     </div>
   );
 };
 
-export const Recruit = () => {
+export const Recruit = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -182,29 +181,28 @@ export const Recruit = () => {
       >
         <path
           d="M3.31672 10.747C2.26874 11.3613 -0.478992 12.6155 1.19456 14.185C2.01208 14.9517 2.92258 15.5 4.06731 15.5H10.5994C11.7441 15.5 12.6546 14.9517 13.4721 14.185C15.1457 12.6155 12.3979 11.3613 11.3499 10.747C8.89245 9.30658 5.77421 9.30658 3.31672 10.747Z"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M10.6667 3.83333C10.6667 5.67428 9.17428 7.16667 7.33333 7.16667C5.49238 7.16667 4 5.67428 4 3.83333C4 1.99238 5.49238 0.5 7.33333 0.5C9.17428 0.5 10.6667 1.99238 10.6667 3.83333Z"
-          stroke="black"
-          stroke-opacity="0.8"
+          stroke={color}
+          strokeOpacity="0.8"
         />
         <path
           d="M15.25 1.33331V5.49998M17.3333 3.41665L13.1667 3.41665"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
-
-export const Reports = () => {
+export const Reports = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -216,37 +214,37 @@ export const Reports = () => {
       >
         <path
           d="M0.916664 7.33335C0.916664 4.19066 0.916664 2.61931 1.95399 1.643C2.99132 0.666687 4.66088 0.666687 8 0.666687H8.64394C11.3616 0.666687 12.7204 0.666687 13.6641 1.33155C13.9345 1.52204 14.1745 1.74796 14.3769 2.00243C15.0833 2.89058 15.0833 4.16948 15.0833 6.72729V8.84851C15.0833 11.3178 15.0833 12.5525 14.6926 13.5386C14.0643 15.1238 12.7357 16.3743 11.0514 16.9656C10.0036 17.3334 8.69182 17.3334 6.06818 17.3334C4.56896 17.3334 3.81934 17.3334 3.22065 17.1232C2.25816 16.7853 1.49896 16.0708 1.13997 15.1649C0.916664 14.6014 0.916664 13.8959 0.916664 12.4849V7.33335Z"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinejoin="round"
         />
         <path
           d="M15.0833 9C15.0833 10.5341 13.8397 11.7778 12.3056 11.7778C11.7507 11.7778 11.0966 11.6806 10.5572 11.8251C10.0779 11.9535 9.70353 12.3279 9.5751 12.8072C9.43056 13.3466 9.52778 14.0007 9.52778 14.5556C9.52778 16.0897 8.28412 17.3333 6.75 17.3333"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M4.66666 4.83337H10.5"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M4.66666 8.16669H7.16666"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
 
-export const Schedule = () => {
+export const Schedule = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -258,37 +256,36 @@ export const Schedule = () => {
       >
         <path
           d="M14 0.666687V2.33335M4 0.666687V2.33335"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M7.33333 13.1667L7.33332 10.1227C7.33332 9.96292 7.21938 9.83337 7.07882 9.83337H6.5M10.358 13.1667L11.4868 10.1243C11.5396 9.98209 11.4274 9.83337 11.2672 9.83337H9.83333"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M1.08334 9.2027C1.08334 5.57161 1.08334 3.75607 2.12677 2.62803C3.1702 1.5 4.84958 1.5 8.20834 1.5H9.79167C13.1504 1.5 14.8298 1.5 15.8732 2.62803C16.9167 3.75607 16.9167 5.57161 16.9167 9.2027V9.63063C16.9167 13.2617 16.9167 15.0773 15.8732 16.2053C14.8298 17.3333 13.1504 17.3333 9.79167 17.3333H8.20834C4.84958 17.3333 3.1702 17.3333 2.12677 16.2053C1.08334 15.0773 1.08334 13.2617 1.08334 9.63063V9.2027Z"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M4 5.66669H14"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
-
-export const Training = () => {
+export const Training = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -300,42 +297,42 @@ export const Training = () => {
       >
         <path
           d="M15.0833 13.1072V7.33335C15.0833 4.19066 15.0833 2.61931 14.107 1.643C13.1307 0.666687 11.5594 0.666687 8.41667 0.666687H7.58333C4.44063 0.666687 2.86929 0.666687 1.89297 1.643C0.916664 2.61931 0.916664 4.19066 0.916664 7.33335V15.25"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M15.0833 13.1667H3C1.8494 13.1667 0.916664 14.0994 0.916664 15.25C0.916664 16.4006 1.8494 17.3334 3 17.3334H15.0833"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M15.0833 17.3334C13.9327 17.3334 13 16.4006 13 15.25C13 14.0994 13.9327 13.1667 15.0833 13.1667"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
         />
         <path
           d="M10.5 4.83337L5.5 4.83337"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M8 8.16669L5.5 8.16669"
-          stroke="black"
-          stroke-opacity="0.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeOpacity="0.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
   );
 };
 
-export const User = () => {
+export const User = ({ color = "black" }: { color?: string }) => {
   return (
     <div>
       <svg
@@ -347,25 +344,151 @@ export const User = () => {
       >
         <path
           d="M17.3116 15C17.936 15 18.4327 14.6071 18.8786 14.0576C19.7915 12.9329 18.2927 12.034 17.7211 11.5938C17.1399 11.1463 16.4911 10.8928 15.8333 10.8333M14.9999 9.16667C16.1505 9.16667 17.0833 8.23393 17.0833 7.08333C17.0833 5.93274 16.1505 5 14.9999 5"
-          stroke="white"
-          stroke-linecap="round"
+          stroke={color}
+          strokeLinecap="round"
         />
         <path
           d="M2.68824 15C2.06382 15 1.56716 14.6071 1.12123 14.0576C0.208349 12.9329 1.70717 12.034 2.27881 11.5938C2.85992 11.1463 3.50876 10.8928 4.16661 10.8333M4.58328 9.16667C3.43268 9.16667 2.49994 8.23393 2.49994 7.08333C2.49994 5.93274 3.43268 5 4.58328 5"
-          stroke="white"
-          stroke-linecap="round"
+          stroke={color}
+          strokeLinecap="round"
         />
         <path
           d="M6.73641 12.5927C5.88493 13.1192 3.6524 14.1943 5.01216 15.5395C5.67639 16.1967 6.41618 16.6667 7.34627 16.6667H12.6536C13.5836 16.6667 14.3234 16.1967 14.9877 15.5395C16.3474 14.1943 14.1149 13.1192 13.2634 12.5927C11.2667 11.358 8.73313 11.358 6.73641 12.5927Z"
-          stroke="white"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke={color}
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M12.9166 6.25001C12.9166 7.86084 11.6107 9.16668 9.99991 9.16668C8.38908 9.16668 7.08324 7.86084 7.08324 6.25001C7.08324 4.63918 8.38908 3.33334 9.99991 3.33334C11.6107 3.33334 12.9166 4.63918 12.9166 6.25001Z"
-          stroke="white"
+          stroke={color}
         />
       </svg>
     </div>
+  );
+};
+
+export const EmployeesIcon = ({ color = "black" }: { color?: string }) => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17.3116 15C17.936 15 18.4327 14.6071 18.8786 14.0576C19.7915 12.9329 18.2927 12.034 17.721 11.5938C17.1399 11.1463 16.4911 10.8928 15.8332 10.8333M14.9999 9.16667C16.1505 9.16667 17.0832 8.23393 17.0832 7.08333C17.0832 5.93274 16.1505 5 14.9999 5"
+        stroke={color}
+        strokeOpacity="0.8"
+        strokeLinecap="round"
+      />
+      <path
+        d="M2.68822 15C2.0638 15 1.56714 14.6071 1.12121 14.0576C0.208326 12.9329 1.70714 12.034 2.27879 11.5938C2.8599 11.1463 3.50874 10.8928 4.16659 10.8333M4.58325 9.16667C3.43266 9.16667 2.49992 8.23393 2.49992 7.08333C2.49992 5.93274 3.43266 5 4.58325 5"
+        stroke={color}
+        strokeOpacity="0.8"
+        strokeLinecap="round"
+      />
+      <path
+        d="M6.73642 12.5927C5.88494 13.1192 3.65241 14.1943 5.01217 15.5395C5.6764 16.1967 6.41619 16.6667 7.34627 16.6667H12.6536C13.5837 16.6667 14.3234 16.1967 14.9877 15.5395C16.3474 14.1943 14.1149 13.1192 13.2634 12.5927C11.2667 11.358 8.73313 11.358 6.73642 12.5927Z"
+        stroke={color}
+        strokeOpacity="0.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.9166 6.25001C12.9166 7.86084 11.6107 9.16668 9.99992 9.16668C8.38909 9.16668 7.08325 7.86084 7.08325 6.25001C7.08325 4.63918 8.38909 3.33334 9.99992 3.33334C11.6107 3.33334 12.9166 4.63918 12.9166 6.25001Z"
+        stroke={color}
+        strokeOpacity="0.8"
+      />
+    </svg>
+  );
+};
+
+export const SettingsIcon = ({ color = "black" }: { color?: string }) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+        stroke={color}
+      />
+      <path
+        d="M20.7906 9.15201C21.5969 10.5418 22 11.2366 22 12C22 12.7634 21.5969 13.4582 20.7906 14.848L18.8669 18.1638C18.0638 19.548 17.6623 20.2402 17.0019 20.6201C16.3416 21 15.5402 21 13.9373 21L10.0627 21C8.45982 21 7.6584 21 6.99807 20.6201C6.33774 20.2402 5.93619 19.548 5.13311 18.1638L3.20942 14.848C2.40314 13.4582 2 12.7634 2 12C2 11.2366 2.40314 10.5418 3.20942 9.152L5.13311 5.83621C5.93619 4.45196 6.33774 3.75984 6.99807 3.37992C7.6584 3 8.45982 3 10.0627 3L13.9373 3C15.5402 3 16.3416 3 17.0019 3.37992C17.6623 3.75984 18.0638 4.45197 18.8669 5.83622L20.7906 9.15201Z"
+        stroke={color}
+      />
+    </svg>
+  );
+};
+
+export const MessageIcon = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
+        stroke="black"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.01577 13.4756C2.08114 16.5411 2.11383 18.0739 3.24496 19.2093C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2093C21.8862 18.0739 21.9189 16.5411 21.9842 13.4756C22.0053 12.4899 22.0053 11.51 21.9842 10.5244C21.9189 7.45883 21.8862 5.92606 20.7551 4.79063C19.6239 3.6552 18.0497 3.61565 14.9012 3.53654C12.9607 3.48778 11.0393 3.48778 9.09882 3.53653C5.95033 3.61563 4.37608 3.65518 3.24495 4.79062C2.11382 5.92605 2.08114 7.45882 2.01576 10.5243C1.99474 11.51 1.99475 12.4899 2.01577 13.4756Z"
+        stroke="black"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const NotificationIcon = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.52992 14.394C2.31727 15.7471 3.268 16.6862 4.43205 17.1542C8.89481 18.9486 15.1052 18.9486 19.5679 17.1542C20.732 16.6862 21.6827 15.7471 21.4701 14.394C21.3394 13.5625 20.6932 12.8701 20.2144 12.194C19.5873 11.2975 19.525 10.3197 19.5249 9.27941C19.5249 5.2591 16.1559 2 12 2C7.84413 2 4.47513 5.2591 4.47513 9.27941C4.47503 10.3197 4.41272 11.2975 3.78561 12.194C3.30684 12.8701 2.66061 13.5625 2.52992 14.394Z"
+        stroke="black"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 21C9.79613 21.6219 10.8475 22 12 22C13.1525 22 14.2039 21.6219 15 21"
+        stroke="black"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ChevronDown = () => {
+  return (
+    <svg
+      width="12"
+      height="6"
+      viewBox="0 0 12 6"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11 0.500038C11 0.500038 7.31756 5.49999 5.99996 5.5C4.68237 5.50001 1 0.499999 1 0.499999"
+        stroke="#534FEB"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 };
