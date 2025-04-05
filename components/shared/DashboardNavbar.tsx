@@ -15,7 +15,7 @@ const DashboardNavbar = () => {
 
       <div className="flex items-center gap-6">
 
-        <span className="py-1.5 px-6 text-xs rounded-xl text-yellow-600 bg-yellow-50">Company Admin</span>
+        <span className="py-1.5 px-6 text-xs rounded-xl text-[#FB923B] bg-[#FB923B]/10">Company Admin</span>
 
         <div className="flex items-center gap-3">
           <span>
