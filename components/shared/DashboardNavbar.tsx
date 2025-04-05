@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const DashboardNavbar = () => {
   return (
-    <div className="w-full flex justify-between items-center px-10 h-[80px] border-b border-black/10  bg-white">
+    <div className="w-full flex justify-between items-center px-8 h-[80px] border-b border-black/10  bg-white">
       <h3 className="text-lg">
       Dashboard
       </h3>
