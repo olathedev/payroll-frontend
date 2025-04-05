@@ -1,11 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
   return (
     <div className="w-[75%]">
-      <header className="flex flex-col gap-0.5">
-        <h1 className="text-[22px] font-semibold text-text-900">
+      <header className="flex flex-col items-center gap-0.5 pb-4">
+        <div className=" flex gap-2 mb-1 items-center">
+          <Image src="/images/logo.png" alt="logo" width={38} height={38} />
+          <p className="font-semibold text-lg text-primary-700">Paytron</p>
+        </div>
+        <h1 className="text-[23px] font-semibold text-text-900">
           Create your account
         </h1>
         <p className="text-text-300">

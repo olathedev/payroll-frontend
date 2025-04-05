@@ -4,16 +4,17 @@ import {
   NotificationIcon,
   SettingsIcon,
 } from "@/public/icons/icons";
+import Image from "next/image";
 
 const DashboardNavbar = () => {
   return (
-    <div className="w-full flex justify-between items-center px-6 h-[88px] border-b border-black/20  bg-white">
+    <div className="w-full flex justify-between items-center px-6 h-[80px] border-b border-black/10  bg-white">
       <h3 className="text-lg">
-        <span className="font-light">Welcome back</span>, Archadis Tech 👋🏾
+       Welcome back, <span className="font">Archadis Tech 👋🏾</span> 
       </h3>
 
       <div className="flex items-center gap-6">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <span>
             <SettingsIcon />
           </span>
@@ -26,7 +27,9 @@ const DashboardNavbar = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <div className="h-[40px] w-[40px] bg-primary-50 rounded-full"></div>
+          <div className="h-[40px] w-[40px] bg-primary-50 rounded-full relative overflow-hidden">
+            <Image src="/images/user.png" alt="" fill className="object-cover" />
+          </div>
           <ChevronDown />
         </div>
       </div>
