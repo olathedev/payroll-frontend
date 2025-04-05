@@ -16,7 +16,7 @@ const Home = () => {
 
       <div className="px-10 w-full">
 
-      <div className="text-xl font-light">Welcome back <span className='font-normal'>, KD constrcutions 👋🏾</span></div>
+      <div className="text-xl ">Welcome back <span className='font-normal'>, KD constrcutions 👋🏾</span></div>
       </div>
     </div>
   )
