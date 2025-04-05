@@ -105,7 +105,7 @@ const Sidebar = () => {
         <Image src="/images/logo.png" alt="logo" width={38} height={38} />
         <p className="font-semibold text-lg text-primary-700">Paytron</p>
       </div>
-      <ul className="flex flex-col gap-2 font-light">
+      <ul className="flex flex-col gap-1 font-light">
         {menuItems.map(({ href, icon, label }, index) => (
           <li
             key={index}
@@ -124,7 +124,7 @@ const Sidebar = () => {
         ))}
       </ul>
 
-      <ul className="mt-auto flex flex-col gap-1 font-light">
+      <ul className="mt-auto flex flex-col font-light">
         {personal.map(({ href, icon, label }, index) => (
           <li
             key={index}

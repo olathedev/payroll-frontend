@@ -10,7 +10,7 @@ const DashboardNavbar = () => {
   return (
     <div className="w-full flex justify-between items-center px-6 h-[80px] border-b border-black/10  bg-white">
       <h3 className="text-lg">
-       Welcome back, <span className="font">Archadis Tech 👋🏾</span> 
+       Welcome back, <span className="font-medium">Archadis Tech 👋🏾</span> 
       </h3>
 
       <div className="flex items-center gap-6">
