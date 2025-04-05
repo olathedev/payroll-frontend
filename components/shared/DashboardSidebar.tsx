@@ -5,7 +5,6 @@ import {
   EmployeesIcon,
   Chart,
   Dashboard,
-  Help,
   Logout,
   Payroll,
   Recruit,
@@ -81,11 +80,7 @@ const Sidebar = () => {
   ];
 
   const personal = [
-    {
-      href: "/home",
-      icon: <Help color={acttivePage === "Help" ? "white" : "black"} />,
-      label: "Help",
-    },
+  
     {
       href: "/settings",
       icon: (

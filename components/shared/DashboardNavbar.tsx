@@ -10,10 +10,13 @@ const DashboardNavbar = () => {
   return (
     <div className="w-full flex justify-between items-center px-6 h-[80px] border-b border-black/10  bg-white">
       <h3 className="text-lg">
-       Welcome back, <span className="font-medium">Archadis Tech 👋🏾</span> 
+      Dashboard
       </h3>
 
       <div className="flex items-center gap-6">
+
+        <span className="py-1.5 px-6 text-xs rounded-xl text-yellow-600 bg-yellow-50">Company Admin</span>
+
         <div className="flex items-center gap-3">
           <span>
             <SettingsIcon />
