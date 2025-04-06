@@ -11,7 +11,7 @@ const layout = ({ children }: Props) => {
     <div className="w-full h-screen flex overflow-hidden">
       <Sidebar />
 
-      <div className="flex-1 grow">
+      <div className="flex-1 grow h-full overflow-y-auto">
         <DashboardNavbar />
         {children}
       </div>

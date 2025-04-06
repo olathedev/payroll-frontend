@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const DashboardNavbar = () => {
   return (
-    <div className="w-full flex justify-between items-center px-8 h-[80px] border-b border-black/10  bg-white">
+    <div className="sticky top-0 w-full flex justify-between items-center px-8 h-[80px] border-b border-black/10  bg-white">
       <h3 className="text-lg">
       Dashboard
       </h3>
 
       <div className="flex items-center gap-6">
 
-        <span className="py-1.5 px-6 text-xs rounded-xl text-yellow-600 bg-yellow-50">Company Admin</span>
+        <span className="py-1.5 px-6 text-xs font-medium rounded-xl text-[#FB923B] bg-[#FB923B]/20">Company Admin</span>
 
         <div className="flex items-center gap-3">
           <span>

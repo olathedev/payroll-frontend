@@ -1,25 +1,38 @@
-import React from 'react'
+// import { CreditCardIcon } from "lucide-react";
+// import EyeIconClosed from "@/public/icons/EyeIconClosed";
+import DepartmentPayrollChart from "@/components/charts/PayrollBydepartmentPieChart";
+import PayrollTrendChart from "@/components/charts/PayrollTrendChart";
+import KycNotice from "@/components/dashboardHome/KycNotice";
+import StatsCards from "@/components/dashboardHome/StatsCards";
+
+import React from "react";
 
 const Home = () => {
   return (
-    <div className='w-full flex flex-col gap-6'>
-      <div className="w-full bg-amber-400 text-white  px-8 py-3 flex items-center justify-between">
-        <div className="flex flex-col g">
-          <h5 className='text-sm font-semibold'>Update KYC Information</h5>
-          <p className='text-text-50 text-sm'>Submit your KYC information to unlock the rest of paytron features.</p>
+    <div className="w-full flex flex-col gap-6 py-6 px-8">
+      <div className="w-full flex flex-col gap-6">
+        <div className="font-medium text-[19px]">
+          Good Morning <span className="">, KD constrcutions 👋🏾</span>
         </div>
 
-        <div>
-          <button className='py-2 px-4 bg-white text-text-900 text-sm rounded-full'>Update KYC</button>
+        <KycNotice />
+        <StatsCards />
+       
+
+       <div className="w-full flex gap-6">
+        <div className="w-[60%] bg-white border border-text-50 rounded-xl p-4">
+            <h3 className="text-text-700 font-medium ">Payroll Growth Trend</h3>
+            <PayrollTrendChart />
         </div>
-      </div>
 
-      <div className="px-8 w-full">
-
-      <div className="text-xl ">Welcome back <span className='font-normal'>, KD constrcutions 👋🏾</span></div>
+        <div className="w-[40%] bg-white border border-text-50 rounded-xl p-4">
+            <h3 className="text-text-700 font-medium ">Payroll by Department</h3>
+            <DepartmentPayrollChart />
+        </div>
+       </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
