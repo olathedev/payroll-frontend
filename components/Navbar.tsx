@@ -7,11 +7,13 @@ const navLinks = ["About", "Features", "Contact"];
 const authButtons = [
   {
     label: "Sign in",
-    style: "border border-gray-500 px-4 py-1 rounded-full text-text-500 hover:bg-gray-100",
+    style:
+      "border border-primary-500 px-4 py-1 rounded-full text-primary-500 hover:bg-primary-50",
   },
   {
     label: "Sign up",
-    style: "px-4 py-1 rounded-full bg-primary-800 text-white hover:bg-primary-900",
+    style:
+      "px-4 py-1 rounded-full bg-primary-600 text-white hover:bg-primary-700",
   },
 ];
 
@@ -30,7 +32,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="px-4 md:px-10 py-4">
+    <div className="px-4 md:px-10 py-4 bg-white">
       <motion.nav
         className="flex justify-between items-center"
         initial="initial"
@@ -41,12 +43,15 @@ const Navbar = () => {
         {/* Logo */}
         <motion.div className="flex gap-2 items-center" {...fadeIn(0.2)}>
           <Image src="/images/logo.png" alt="logo" width={34} height={34} />
-          <p className="font-semibold text-lg text-primary-500">Paytron</p>
+          <p className="font-semibold text-lg text-primary-600">Paytron</p>
         </motion.div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:block">
-          <motion.ul className="flex gap-6 items-center text-primary-700" {...fadeIn(0.4)}>
+          <motion.ul
+            className="flex gap-6 items-center text-primary-700"
+            {...fadeIn(0.4)}
+          >
             {navLinks.map((item) => (
               <li
                 key={item}
@@ -81,9 +86,19 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               )}
             </svg>
           </motion.button>
@@ -101,7 +116,10 @@ const Navbar = () => {
         >
           <ul className="flex flex-col gap-4 text-primary-700">
             {navLinks.map((item) => (
-              <li key={item} className="hover:text-primary-500 cursor-pointer py-2">
+              <li
+                key={item}
+                className="hover:text-primary-500 cursor-pointer py-2"
+              >
                 {item}
               </li>
             ))}

@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 md:px-10">
+    <div className="min-h-screen px-4 md:px-20">
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 max-w-7xl mx-auto py-8">
         <motion.div 
